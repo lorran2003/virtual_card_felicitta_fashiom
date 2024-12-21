@@ -88,11 +88,15 @@ const redirectInstagram = () => {
 
 export default function App() {
 
-  const [width, setWidth] = useState<number>(window.innerWidth);
+  const imageWidth = () => {
+    return window.innerWidth > 800 ? 800 : window.innerWidth;
+  }
+
+  const [width, setWidth] = useState<number>(imageWidth());
 
   useEffect(() => {
     addEventListener('resize', () => {
-      setWidth(window.innerWidth);
+      setWidth(imageWidth);
     })
   })
 
