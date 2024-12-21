@@ -1,0 +1,30 @@
+header{
+    position: sticky;
+    top: 10vh;
+    width: 95%;
+}
+
+#container-header{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+#content-header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+#blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    background-color: #ffd3e4;
+}
+

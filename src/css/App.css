@@ -1,0 +1,30 @@
+main{
+    padding: 10px 5px;
+}
+
+logo-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+section{
+    text-align: center;
+}
+
+section h1{
+    font-weight: 100;
+    font-size: 4vh;
+}
+
+section h1, .container-buttons {
+    padding: 10px 0px 10px 0px;
+}
+
+section .container-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
