@@ -12,10 +12,3 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
