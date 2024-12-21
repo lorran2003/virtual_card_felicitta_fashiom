@@ -4,7 +4,13 @@ main{
     max-width: 700px;
 }
 
-logo-image img{
+container-image{
+    width: 100vh;
+    height: auto;
+    object-fit: cover;
+}
+
+#image{
     width: 100%;
     height: auto;
     object-fit: cover;

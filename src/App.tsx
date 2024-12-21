@@ -1,6 +1,5 @@
 import './css/App.css';
 import logoRemoveBg from './assets/logo-removebg.png';
-import { useEffect, useState } from 'react';
 import { Carousel } from './components/Carousel';
 import Button from './components/Button';
 import iconWpp from './assets/Icons/whatsapp-brands-solid.svg'
@@ -88,23 +87,11 @@ const redirectInstagram = () => {
 
 export default function App() {
 
-  const imageWidth = () => {
-    return window.innerWidth > 800 ? 800 : window.innerWidth;
-  }
-
-  const [width, setWidth] = useState<number>(imageWidth());
-
-  useEffect(() => {
-    addEventListener('resize', () => {
-      setWidth(imageWidth);
-    })
-  })
-
   return (
     <main>
 
-      <div id='logo-image'>
-        <img src={logoRemoveBg} alt="logo" width={width} />
+      <div id='container-image'>
+        <img id='image' src={logoRemoveBg} alt="logo" />
       </div>
 
       <section>
@@ -133,7 +120,6 @@ export default function App() {
             text='Fotos!'
             onClick={redirectInstagram}
           />
-
 
         </div>
       </section>
